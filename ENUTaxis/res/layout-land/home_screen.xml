@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@layout/background"
+	android:baselineAligned="false"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:baselineAligned="false"
+		android:orientation="horizontal" >
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:orientation="vertical" >
+
+			<TextView
+				android:id="@+id/homeScreenTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="20dp"
+				android:paddingTop="20dp"
+				android:text="@string/title"
+				android:textSize="50sp" />
+
+			<TextView
+				android:id="@+id/question"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="30dp"
+				android:text="@string/question" />
+		</LinearLayout>
+
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" >
+
+			<ImageView
+				android:id="@+id/napierTriangle"
+				android:layout_width="150dp"
+				android:layout_height="150dp"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentTop="true"
+				android:paddingRight="20dp"
+				android:src="@drawable/napier_triangle"
+				tools:ignore="ContentDescription" />
+
+			<TextView
+				android:id="@+id/universityName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@id/napierTriangle"
+				android:layout_toLeftOf="@id/napierTriangle"
+				android:text="@string/universityName" />
+
+			<TextView
+				android:id="@+id/napierName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_above="@+id/universityName"
+				android:layout_alignRight="@+id/universityName"
+				android:text="@string/napierName" />
+		</RelativeLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="400dp"
+		android:layout_height="match_parent"
+		android:layout_gravity="center"
+		android:layout_marginTop="50dp"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+
+			<EditText
+				android:id="@+id/firstName"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:hint="@string/hintFirstName"
+				android:inputType="textPersonName"
+				android:textColor="@color/editTextColor"
+				android:textColorHint="@color/hintColor" >
+
+				<requestFocus />
+			</EditText>
+
+			<EditText
+				android:id="@+id/lastName"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:hint="@string/hintLastName"
+				android:inputType="textPersonName"
+				android:textColor="@color/editTextColor"
+				android:textColorHint="@color/hintColor" >
+			</EditText>
+		</LinearLayout>
+
+		<!-- <EditText
+			android:id="@+id/email"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/hintEmail"
+			android:inputType="textEmailAddress"
+			android:textColor="@color/editTextColor"
+			android:textColorHint="@color/hintColor" /> -->
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+
+			<EditText
+				android:id="@+id/phone"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:hint="@string/hintPhone"
+				android:inputType="phone"
+				android:textColor="@color/editTextColor"
+				android:textColorHint="@color/hintColor" />
+
+			<EditText
+				android:id="@+id/matriculation"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:hint="@string/hintMatriculation"
+				android:inputType="number"
+				android:textColor="@color/editTextColor"
+				android:textColorHint="@color/hintColor" />
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/makeBooking"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/btnBackgroundColor"
+			android:text="@string/btnMakeBooking"
+			android:textColor="@color/btnTextColor" />
+	</LinearLayout>
+
+</LinearLayout>

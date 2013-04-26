@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:baselineAligned="false"
+	android:orientation="horizontal" >
+
+	<fragment
+		android:id="@+id/map"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="2"
+		class="com.google.android.gms.maps.MapFragment" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="2"
+		android:background="@layout/background"
+		android:orientation="vertical"
+		android:paddingRight="5dp" >
+
+		<TextView
+			android:id="@+id/fromLabel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="40dp"
+			android:background="#5D5D5D"
+			android:paddingBottom="5dp"
+			android:paddingLeft="5dp"
+			android:paddingRight="10dp"
+			android:paddingTop="5dp"
+			android:text="@string/fromLabel"
+			android:textColor="#FFFFFF"
+			android:textSize="24sp" />
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:orientation="horizontal"
+			android:paddingLeft="10dp" >
+
+			<AutoCompleteTextView
+				android:id="@+id/fromStreet"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/hintStreet"
+				android:scrollHorizontally="true"
+				android:singleLine="true"
+				android:textColorHint="@color/hintColor" />
+			
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/toLabel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="40dp"
+			android:background="#5D5D5D"
+			android:paddingBottom="5dp"
+			android:paddingLeft="5dp"
+			android:paddingRight="10dp"
+			android:paddingTop="5dp"
+			android:text="@string/toLabel"
+			android:textColor="#FFFFFF"
+			android:textSize="24sp" />
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:orientation="horizontal"
+			android:paddingLeft="10dp" >
+
+			<AutoCompleteTextView
+				android:id="@+id/toStreet"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/hintStreet"
+				android:scrollHorizontally="true"
+				android:singleLine="true"
+				android:textColorHint="@color/hintColor" />
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/whenLabel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="40dp"
+			android:background="#5D5D5D"
+			android:paddingBottom="5dp"
+			android:paddingLeft="5dp"
+			android:paddingRight="10dp"
+			android:paddingTop="5dp"
+			android:text="@string/whenLabel"
+			android:textColor="#FFFFFF"
+			android:textSize="24sp" />
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginTop="10dp"
+			android:orientation="horizontal" >
+
+			<Button
+				android:id="@+id/btnASAP"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="2dp"
+				android:layout_weight="3"
+				android:background="@color/btnBackgroundColor"
+				android:text="@string/btnTxtASAP"
+				android:textColor="@color/btnTextColor" />
+
+			<Button
+				android:id="@+id/btnDateTime"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="2dp"
+				android:layout_weight="3"
+				android:background="@color/btnBackgroundColor"
+				android:text="@string/btnTextDateTime"
+				android:textColor="@color/btnTextColor" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginTop="20dp"
+			android:orientation="horizontal" >
+
+			<Button
+				android:id="@+id/btnFindTaxis"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="2dp"
+				android:background="@color/btnBackgroundColor"
+				android:text="@string/btnTextSubmit"
+				android:textColor="@color/btnTextColor" />
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

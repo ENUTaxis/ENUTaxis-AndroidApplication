@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- General -->
+	<string name="app_name">ENU Taxis</string>
+	<string name="action_settings">Settings</string>
+	
+	<!-- Home Screen -->
+	<string name="title">ENU Taxis</string>
+	<string name="napierName">Edinburgh Napier</string>
+	<string name="universityName">UNIVERSITY</string>
+	<string name="question">Want to book for a Taxi?</string>
+	<string name="btnMakeBooking">Book for a Taxi</string>
+	<string name="hintFirstName">First Name</string>
+	<string name="hintLastName">Last Name</string>
+	<string name="hintEmail">Email@address.co.uk</string>
+	<string name="hintPhone">Phone</string>
+	<string name="hintMatriculation">Matriculation Nb.</string>
+	
+	<!-- Booking Screen -->
+	<string name="fromLabel">Departure</string>
+	<string name="toLabel">Destination</string>
+	<string name="whenLabel">When ?</string>
+	<string name="hintStreet">N°, Street</string>
+	<string name="hintPostcode">Postcode</string>
+	<string name="btnTxtASAP">ASAP</string>
+	<string name="btnTextDateTime">Select Date/Time</string>
+	<string name="btnTextSubmit">Find a Taxi</string>
+	
+	<!-- Option Menu -->
+	<string name="clearPreferencesText">Clear Preferences</string>
+	<string name="helpText">Help</string>
+
+</resources>
